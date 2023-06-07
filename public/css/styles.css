@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: rgb(7, 7, 163);
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  max-width: 600px;
+  border-radius: 8px;
+}
+span {
+  color: green;
+}
+h1, p {
+  font-weight: 700;
+  
+  
+}
+.headArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom:  20px;
+
+}
+.form-group {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20px;
+}
+p {
+  
+  padding-bottom: 20px;
+
+}
+.passwords {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+button {
+  background-color: green;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 20px;
+  font-size: inherit;
+  cursor: pointer;
+}
