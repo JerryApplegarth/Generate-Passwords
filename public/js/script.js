@@ -6,10 +6,7 @@ const charNumbers = document.querySelector("#numbers");
 const charLowercase = document.querySelector("#lowercase");
 const charUppercase = document.querySelector("#uppercase");
 
-// charSymbols = false;
-// charNumbers = false;
-// charLowercase = false;
-// charUppercase = false;
+
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 const symbols = ["@", "#", "$", "&"];
@@ -43,34 +40,45 @@ const generatePassword = (
   return password;
 };
 
+// if (charNumbers.checked) {
+//   availableCharacters.hasNumbers = true;
+// } else {
+//   availableCharacters.hasNumbers = false;
+// }
 
-  if (charNumbers.checked) {
-    availableCharacters.hasNumbers = true;
-  }
+// if (charSymbols.checked) {
+//   availableCharacters.hasSymbols = true;
+// } else {
+//   availableCharacters.hasSymbols = false;
+// }
 
+// if (charLowercase.checked) {
+//   availableCharacters.hasLowercase = true;
+// } else {
+//   availableCharacters.hasLowercase = false;
+// }
 
-
-if (charSymbols.checked) {
-    availableCharacters.hasSymbols = true;
-  }
-
-  if (charLowercase.checked) {
-    availableCharacters.hasLowercase = true;
-  }
-
-
-  if (charUppercase.checked) {
-    availableCharacters.hasUppercase = true;
-  }
-
+// if (charUppercase.checked) {
+//   availableCharacters.hasUppercase = true;
+// } else {
+//   availableCharacters.hasUppercase = false;
+// }
 
 btn.addEventListener("click", () => {
   firstPassword.textContent = generatePassword(
-    6,
-    charNumbers,
-    charSymbols,
-    charLowercase,
-    charUppercase
+    12,
+    true,
+    true,
+    true,
+    true
   );
-  secondPassword.textContent = generatePassword(6, true, true, true, true);
+
+  secondPassword.textContent = generatePassword(
+    8,
+    true,
+    true,
+    true,
+    true
+  );
+  
 });
