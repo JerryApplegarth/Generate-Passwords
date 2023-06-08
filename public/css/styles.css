@@ -5,7 +5,7 @@
 }
 .container {
   background-color: rgb(7, 7, 163);
-  color: white;
+  color: rgb(218, 208, 208);
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
@@ -29,6 +29,12 @@ h1, p {
   margin-bottom:  20px;
 
 }
+.password-options {
+  display: flex;
+  flex-direction: column;
+  
+  align-self: center;
+}
 .form-group {
   display: flex;
   justify-content: space-around;
@@ -51,5 +57,21 @@ button {
   border: none;
   padding: 10px 20px;
   font-size: inherit;
+  margin-top: 20px;
   cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
