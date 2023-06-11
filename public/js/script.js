@@ -30,7 +30,7 @@ clipboard.addEventListener("click", () => {
   alert("Password copied to clipboard");
 });
 
-generate.addEventListener("click", () => {
+generateEl.addEventListener("click", () => {
   const length = +lengthEl.value;
   const hasLower = lowercaseEl.checked;
   const hasUpper = uppercaseEl.checked;
@@ -65,7 +65,7 @@ function generatePassword(lower, upper, number, symbol, length) {
       generatedPassword += randomFunc[funcName]();
     });
   }
-
+  // generate final password
   const finalPassword = generatedPassword.slice(0, length);
 
   return finalPassword;
